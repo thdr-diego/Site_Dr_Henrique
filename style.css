@@ -1,0 +1,440 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+@media (min-width: 737px){
+
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: linear-gradient(to right bottom, #001528, #02182c, #031c30, #041f34, #052238, #052238, #052238, #052238, #041f34, #031c30, #02182c, #001528);
+}
+a{
+    text-decoration: none;
+}
+h1{
+    color: white;
+    text-align: center;
+   /* text-shadow: 2px 4px 5px black;*/
+}
+.top{
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    flex-basis: 100%;
+    height: 5vh;
+    margin-bottom: 20px;
+}
+.logoSocialMedia{
+    height: 3vh;
+    margin-right: 10px;
+}
+.barraMenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 100%;
+    margin-bottom: 40px;
+}
+.logo{
+        height:100px;
+        margin-left: 50px;
+        margin-top: -30px;
+}
+.menu{
+    margin-right: 20px;
+    color: aliceblue;
+}
+.liMenu{
+    list-style: none;
+    display: inline;
+    margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
+    color:white;
+}
+/*Carrossel INICIO*/
+
+.slider{
+    flex-basis: 100%;
+    width: 600px;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.slides{
+    width: 400%;
+    height: 600px;
+    display: flex;
+  
+    
+}
+  
+.slides input{
+    display: none;
+}
+.slide{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    }
+
+.slide img{
+    width: 600px;
+    
+    
+}
+.text1{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    height: 200px;
+    background-image: url(/public/imgs/slide01.png);
+    color: #001528;
+    
+    background-size: cover;
+}
+.text2{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    height: 200px;
+    background: rgb(2,0,36);
+background: linear-gradient(95deg, rgba(2,0,36,1) 0%, rgba(0,33,255,1) 100%);
+    background-size: cover;
+}
+.text3{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    height: 200px;
+    background-image: url(/public/imgs/slide03.png);
+    background-size: cover;
+}
+.text4{
+    display: flex;
+    width: 50vw;
+    align-items: center;
+    height: 200px;
+    background: rgb(30,22,92);
+background: linear-gradient(90deg, rgba(30,22,92,1) 0%, rgba(57,6,66,1) 63%);
+    background-size: cover;
+}
+
+.navegacao{
+  display: flex;
+  justify-content: center;
+}
+.manual-navigation{
+    position: absolute;
+    width: 600px;
+    margin-top: -390px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+}
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: #fff;
+}
+#radio1:checked ~ .first{
+margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+    }
+#radio3:checked ~ .first{
+   margin-left: -50%;
+    }  
+#radio4:checked ~ .first{
+   margin-left: -75%;
+    }  
+.navigation-auto div{
+    display: none;
+    border: 2px solid #ffa620;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+.navigation-auto{
+    position: absolute;
+    width: 95vw;
+    margin-top: 170px;
+    display: flex;
+    justify-content: center;
+
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~.navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+#radio2:checked ~.navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~.navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~.navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+
+
+/* Carrossel FIM */
+.sobre{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-basis: 100%;
+    height: 400px;
+    color: aliceblue;
+
+/* From https://css.glass */
+background: rgba(10, 52, 73, 0.15);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.6px);
+-webkit-backdrop-filter: blur(10.6px);
+border: 1px solid rgba(10, 52, 73, 0.64);
+}
+.texto{
+    margin-left: 5vh;
+    margin-right: 5vh;
+    height: 100%;
+    width: 60%;
+}
+.foto{
+    margin-right: 2vh;
+    height: 95%;
+    border-radius: 15px;
+
+}
+.artigos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-basis: 100%;
+    color:aliceblue;
+    /* From https://css.glass */
+    background: rgba(10, 52, 73, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(10, 52, 73, 0.64);
+}
+.titulo{
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+}
+.artigoItem{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:200px;
+    width:250px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.articleFoto{
+    height: 45%;
+    flex-basis: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.articleText{
+    margin-top: -30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    color:#001528;
+}
+.atuacao{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+    color: aliceblue;
+
+    /* From https://css.glass */
+    background: rgba(10, 52, 73, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(10, 52, 73, 0.64);
+}
+.areas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+}
+.atuacaoItem{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #fff;
+        height: 130px;
+        width: 130px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 15px;
+        color: #001528;
+  
+        
+}
+.atuacaoIcon{
+    height: 70px;
+    flex-basis: 100%;
+    margin-bottom: 5px;
+}
+.quebraLinha{
+    flex-basis: 100%;
+
+}
+
+.contato{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-basis: 100%;
+    margin-bottom: 10px;
+
+    color: aliceblue;
+
+    /* From https://css.glass */
+    background: rgba(10, 52, 73, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.6px);
+    -webkit-backdrop-filter: blur(10.6px);
+    border: 1px solid rgba(10, 52, 73, 0.64);
+}
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 70vh;
+    color: #001528;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.3);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.4px);
+-webkit-backdrop-filter: blur(7.4px);
+}
+
+.inputLabel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+.formLabel{
+    display: flex;
+    width: 4vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.formLabel2{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.entry{
+    width: 35vw;
+   border-radius: 15px;
+   margin-left: 10px;
+   margin-right: 10px;
+   border:none;
+   padding: 10px;
+   opacity: 40%;
+}
+.entry2{
+    width: 38vw;
+    height: 10vh;
+   border-radius: 15px;
+   margin-left: 10px;
+   margin-right: 10px;
+   border:none;
+   padding: 10px;
+   opacity: 40%;
+}
+.entry3{
+   border-radius: 15px;
+   margin-top: 5px;
+   margin-left: 10px;
+   margin-right: 10px;
+   border:none;
+   padding: 10px;
+   opacity: 40%;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+}
+.back{
+    width: 99vw;
+    z-index: -1;
+}
+
+}
